@@ -1,0 +1,211 @@
+
+.header{
+    justify-content:space-around;
+    
+    margin-right: 5%;
+    display: flex;
+   color: white;
+   height: 80px;
+}
+
+.soge{
+    font-style: italic;
+   padding-top: 15px;
+    align-items: center;
+    text-align: center;
+    width: 17%;
+    height: 37px;
+}
+
+
+.soge:hover{
+   background-color: white;
+   color: black;
+   transition: width 1000ms ease-in, background-color 1000ms ease-in;
+   
+   }
+
+.a23{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+   
+}
+.a23:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+
+.a23 .span23{
+    position: absolute;
+    display: block;
+}
+.a23 .span23:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.a23 .span23:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.a23 .span23:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+.a23 .span23:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+.login{
+   
+   width: 85px;
+   height: 40px;
+   margin-top: 28px;
+   right: 100px;
+   margin-right: 6%;
+   margin-left: 1%;
+}
+body{
+    background-color:white;
+}
+.footer{
+    color: white;
+    text-align: center;
+}
+.footer2{
+    color: white;
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+}
+.Putin{
+    width: 50%;
+    margin-left: 26%;
+}
+.spaceX{
+    width: 20%;
+    margin-right: 5%;
+    border-radius: 30%;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.ship{
+    margin-left: 25%;
+    margin-top: 100px;
+    border-radius: 30% ;
+}
+.mainVideo{
+    margin-top: 10px;
+  
+}
+.video3{
+    margin-top: 20px;
+    margin-left: 10%;
+    width: 80%;
+}
+.video4{
+
+    margin-top: 20px;
+    margin-left: 25%;
+    width: 50%; 
+}
+.stupid{
+    font-style: italic;
+    margin-top: 150px;
+}
+.stupid2{
+    font-style: italic;
+    margin-top: 150px;
+    margin-bottom: 150px;
+   
+   
+}
+.CEO{
+    border: 1px solid white;
+    width: 40%;
+    margin-left: 30%;
+}
+
+.CEO:hover{
+    background-color:white; 
+    color:  black;
+ 
+
+    transition: width 1000ms ease-in, background-color 1000ms ease-in;
+    
+}
+.video4:hover{
+    background-color:white; 
+    color:  black;
+ 
+
+    transition: width 1000ms ease-in, background-color 1000ms ease-in;
+}

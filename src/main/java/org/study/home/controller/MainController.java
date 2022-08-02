@@ -20,4 +20,9 @@ public class MainController {
 	public String gameInfo() {
 		return "info/gameInfo";
 	}
+	
+	/*
+	 * @GetMapping("/adminMember") public String adminMember() { return
+	 * "board/adminMember"; }
+	 */
 }

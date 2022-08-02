@@ -11,8 +11,6 @@ public class BoardController {
 	@Autowired
 	private BoardService boardService;
 	
-	@GetMapping("/boardInsert")
-	public String boardInsert() {
-		return "board/boardInsert";
-	}
+	
 }
+

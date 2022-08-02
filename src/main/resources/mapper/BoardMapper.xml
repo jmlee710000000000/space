@@ -8,4 +8,5 @@
 		insert into boardTBL(b_title, b_content, b_writer) values (#[b_title], #[b_content], #[b_writer])
 	</insert>
 
+
 </mapper>

@@ -23,8 +23,8 @@
 			<!--<input type="text" placeholder="검색" style="position: relative; left: 30%; padding: 10px;">  상단 검색바-->
 			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 				<li class="nav-item"><a class="nav-link active"
-					aria-current="page" href="#!">로그인</a></li>
-				<li class="nav-item"><a class="nav-link" href="#!">회원가입</a></li>
+					aria-current="page" href="/moveLogin">로그인</a></li>
+				<li class="nav-item"><a class="nav-link" href="/moveRegist">회원가입</a></li>
 				<li class="nav-item"><a class="nav-link" href="#!">장바구니</a></li>
 				<li class="nav-item"><a class="nav-link" href="#!">고객센터</a></li>
 			</ul>
