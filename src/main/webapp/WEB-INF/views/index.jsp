@@ -13,25 +13,39 @@
 
 	<c:if test="${not empty sessionScope.user_id}">
 		<div class="header">
-		<h1>alien ship</h1>
+     <h1 class="Logo" > SPACE SHIP</h1>
 
+         
 
+      
+            <a href="/moveMakeWeb2"class="a1">역사</a>
+         
+         
+            <a href="/moveMakeWeb3"class="a1">사업분야</a>
+         
+         
+            <a href="/moveMakeWeb4"class="a1">ufo</a>
+      
+         
+            <a href="/moveMakeWeb5"class="a1">우주인채용</a>
+      
 
-			<p class="soge">
-				<a href="/moveMakeWeb2">123</a>
-			</p>
-			<p class="soge">
-				<a href="/moveMakeWeb3">사업분야</a>
-			</p>
-			<p class="soge">
-				<a href="/moveMakeWeb4">ufo</a>
-			</p>
-			<p class="soge">
-				<a href="/moveMakeWeb5">우주인채용</a>
-			</p>
-
-			<a class="" aria-current="page" href="/logout" id="logoutBtn">로그아웃</a>
-		</div>
+         
+            
+         <a class="frame-btn" href="/logout"id="logoutBtn">
+        <span class="frame-btn__outline frame-btn__outline--tall">
+          <span class="frame-btn__line frame-btn__line--tall"></span>
+          <span class="frame-btn__line frame-btn__line--flat"></span>
+        </span>
+        <span class="frame-btn__outline frame-btn__outline--flat">
+          <span class="frame-btn__line frame-btn__line--tall"></span>
+          <span class="frame-btn__line frame-btn__line--flat"></span>
+        </span>
+        <span class="frame-btn__solid"></span>
+        <span class="frame-btn__text">로그아웃</span>
+      </a>
+      
+      </div>
 		<video class="mainVideo"
 			src="../../resources/css/nebula_-_25168 (Original).mp4" width="100%"
 			muted autoplay loop></video>
@@ -71,26 +85,36 @@
 
 
 		<div class="header">
-		<h1>alien ship</h1>
+		<h1 class="Logo" > SPACE SHIP</h1>
 
 
 
-			<p class="soge">
-				<a href="/moveMakeWeb2">123</a>
-			</p>
-			<p class="soge">
-				<a href="/moveMakeWeb3">사업분야</a>
-			</p>
-			<p class="soge">
-				<a href="/moveMakeWeb4">ufo</a>
-			</p>
-			<p class="soge">
-				<a href="/moveMakeWeb5">우주인채용</a>
-			</p>
+			<a href="/moveMakeWeb2"class="a1">역사</a>
+         
+         
+            <a href="/moveMakeWeb3"class="a1">사업분야</a>
+         
+         
+            <a href="/moveMakeWeb4"class="a1">ufo</a>
+      
+         
+            <a href="/moveMakeWeb5"class="a1">우주인채용</a>
+      
 
-			<a class="login" href="moveLogin"><img
-				src="../../resources/css/loginBtn.png"></a>
-		</div>
+         
+            
+         <a class="frame-btn" href="moveLogin">
+        <span class="frame-btn__outline frame-btn__outline--tall">
+          <span class="frame-btn__line frame-btn__line--tall"></span>
+          <span class="frame-btn__line frame-btn__line--flat"></span>
+        </span>
+        <span class="frame-btn__outline frame-btn__outline--flat">
+          <span class="frame-btn__line frame-btn__line--tall"></span>
+          <span class="frame-btn__line frame-btn__line--flat"></span>
+        </span>
+        <span class="frame-btn__solid"></span>
+        <span class="frame-btn__text">LOGIN</span>
+      </a>		</div>
 		<video class="mainVideo"
 			src="../../resources/css/nebula_-_25168 (Original).mp4" width="100%"
 			muted autoplay loop></video>

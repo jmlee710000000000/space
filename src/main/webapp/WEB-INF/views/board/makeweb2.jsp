@@ -21,24 +21,39 @@
 
 	<c:if test="${not empty sessionScope.user_id}">
 		<div class="header">
-			<p class="soge">
-				<a href="/moveMakeWeb2">123</a>
-			</p>
+     <h1><a href="/" class="Logo"> SPACE SHIP </a></h1>
 
-			<p class="soge">
-				<a href="/moveMakeWeb3">사업분야</a>
-			</p>
-			
-			<p class="soge">
-				<a href="/moveMakeWeb4">ufo</a>
-			</p>
+         
 
-			<p class="soge">
-				<a href="/moveMakeWeb5">우주인채용</a>
-			</p>
-			<a class="" aria-current="page" href="/logout" id="logoutBtn">로그아웃</a>
+      
+            <a href="/moveMakeWeb2"class="lightOna1">역사</a>
+         
+         
+            <a href="/moveMakeWeb3"class="a1">사업분야</a>
+         
+         
+            <a href="/moveMakeWeb4"class="a1">ufo</a>
+      
+         
+            <a href="/moveMakeWeb5"class="a1">우주인채용</a>
+      
 
-		</div>
+         
+            
+         <a class="frame-btn" href="/logout"id="logoutBtn">
+        <span class="frame-btn__outline frame-btn__outline--tall">
+          <span class="frame-btn__line frame-btn__line--tall"></span>
+          <span class="frame-btn__line frame-btn__line--flat"></span>
+        </span>
+        <span class="frame-btn__outline frame-btn__outline--flat">
+          <span class="frame-btn__line frame-btn__line--tall"></span>
+          <span class="frame-btn__line frame-btn__line--flat"></span>
+        </span>
+        <span class="frame-btn__solid"></span>
+        <span class="frame-btn__text">로그아웃</span>
+      </a>
+      
+      </div>
 	</c:if>
 
 	 
@@ -47,22 +62,42 @@
 
 	<c:if test="${empty sessionScope.user_id}">
 		<div class="header">
-			<p class="soge">
-				<a href="/moveMakeWeb2">123</a>
-			</p>
+		<h1><a href="/" class="Logo"> SPACE SHIP </a></h1>
 
-			<p class="soge">
-				<a href="/moveMakeWeb3">사업분야</a>
-			</p>
 
-			<p class="soge">
-				<a href="/moveMakeWeb5">우주인채용</a>
-			</p>
-			<a class=""  href="moveLogin" id="loginBtn">로그인</a>
 
-		</div>
+			<a href="/moveMakeWeb2"class="lightOna1">역사</a>
+         
+         
+            <a href="/moveMakeWeb3"class="a1">사업분야</a>
+         
+         
+            <a href="/moveMakeWeb4"class="a1">ufo</a>
+      
+         
+            <a href="/moveMakeWeb5"class="a1">우주인채용</a>
+      
+
+         
+            
+         <a class="frame-btn" href="moveLogin">
+        <span class="frame-btn__outline frame-btn__outline--tall">
+          <span class="frame-btn__line frame-btn__line--tall"></span>
+          <span class="frame-btn__line frame-btn__line--flat"></span>
+        </span>
+        <span class="frame-btn__outline frame-btn__outline--flat">
+          <span class="frame-btn__line frame-btn__line--tall"></span>
+          <span class="frame-btn__line frame-btn__line--flat"></span>
+        </span>
+        <span class="frame-btn__solid"></span>
+        <span class="frame-btn__text">LOGIN</span>
+      </a>		</div>
 
 	</c:if>
+	
+	<script type="text/javascript">
+		
+	</script>
 
 </body>
 </html>
