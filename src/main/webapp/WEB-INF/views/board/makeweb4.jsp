@@ -50,7 +50,13 @@
 		<div class="mid">
 			<h1>UFO '미확인 비행물체(Unidentified Flying Object)</h1>
 			<video src="../../../resources/css/ufo.mp4" muted autoplay loop></video>
-
+			<h3 class="ufoText1">
+				본래 '확인된 비행 물체(identified flying object; IFO)'의 반댓말로, 날아다니는 무언가의 정체가
+				아직 식별되지 않은 것들을 통틀어 지칭하는 단어이다. <br /> 즉 사전적인 뜻으로는 문자 그대로 미확인 항공기, 즉
+				적국의 정찰기, 미사일, 드론, 헬륨 풍선 등도 모두 해당될 수 있다. <br /> 단, 일반적으로 다른 수식어 없이
+				UFO라고만 하면 하술할 외계인과 관련한 용어로 사용되는 경우가 대부분이다.
+			</h3>
+			<video src="../../../resources/css/Alien - 23135.mp4" muted autoplay loop></video>
 
 		</div>
 	</c:if>
@@ -60,18 +66,18 @@
 
 
 	<c:if test="${empty sessionScope.user_id}">
-	<div class="neon_effect">
-		<div class="header">
-			
+		<div class="neon_effect">
+			<div class="header">
+
 				<h1>
 					<a href="/" class="pGold"> SPACE SHIP</a>
 				</h1>
 
 
 
-				 <a href="/moveMakeWeb2" class="a1">역사</a> <a href="/moveMakeWeb3"
+				<a href="/moveMakeWeb2" class="a1">역사</a> <a href="/moveMakeWeb3"
 					class="a1">사업분야</a> <a href="/moveMakeWeb4" class="lightOna1">ufo</a>
-         
+
 
 				<a href="/moveMakeWeb5" class="a1">우주인채용</a> <a class="frame-btn"
 					href="moveLogin"> <span
@@ -93,11 +99,13 @@
 
 			<video class="ufo1" src="../../../resources/css/ufo.mp4" muted
 				autoplay loop></video>
-			<p>본래 '확인된 비행 물체(identified flying object; IFO)'의 반댓말로, 날아다니는
-				무언가의 정체가 아직 식별되지 않은 것들을 통틀어 지칭하는 단어이다. 즉 사전적인 뜻으로는 문자 그대로 미확인 항공기, 즉
-				적국의 정찰기, 미사일, 드론, 헬륨 풍선 등도 모두 해당될 수 있다. 단, 일반적으로 다른 수식어 없이 UFO라고만 하면
-				하술할 외계인과 관련한 용어로 사용되는 경우가 대부분이다.</p>
-
+			<h3 class="ufoText1">
+				본래 '확인된 비행 물체(identified flying object; IFO)'의 반댓말로, 날아다니는 무언가의 정체가
+				아직 식별되지 않은 것들을 통틀어 지칭하는 단어이다. <br /> 즉 사전적인 뜻으로는 문자 그대로 미확인 항공기, 즉
+				적국의 정찰기, 미사일, 드론, 헬륨 풍선 등도 모두 해당될 수 있다. <br /> 단, 일반적으로 다른 수식어 없이
+				UFO라고만 하면 하술할 외계인과 관련한 용어로 사용되는 경우가 대부분이다.
+			</h3>
+			<video  class="ufo1" src="../../../resources/css/Alien - 23135.mp4" muted autoplay loop></video>
 		</div>
 	</c:if>
 

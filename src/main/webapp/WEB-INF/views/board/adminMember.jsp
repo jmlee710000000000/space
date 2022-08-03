@@ -80,7 +80,7 @@
 
 
 				<h1 class="headText">
-					<p class="pGold">진주 공주</p>
+					<p class="pGold">죄수 명단</p>
 				</h1>
 
 

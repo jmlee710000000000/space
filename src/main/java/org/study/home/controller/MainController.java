@@ -21,6 +21,11 @@ public class MainController {
 		return "info/gameInfo";
 	}
 	
+	@GetMapping("/han")
+	public String gohan() {
+		return "board/han";
+	}
+	
 	/*
 	 * @GetMapping("/adminMember") public String adminMember() { return
 	 * "board/adminMember"; }

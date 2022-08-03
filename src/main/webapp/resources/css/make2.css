@@ -8,8 +8,8 @@
  
 }
 .Logo{
-	text-decoration:none;
-	color:white;
+   text-decoration:none;
+   color:white;
 }
 
 
@@ -37,7 +37,7 @@
 }
 
 .lightOna1{
-	align-items: center;
+   align-items: center;
     text-align: center;
   
     position: relative;
@@ -54,7 +54,7 @@
     letter-spacing: 4px;
     overflow: hidden;
     margin-right: 50px;
-	 background: #03e9f4;
+    background: #03e9f4;
     color: rgb(255, 255, 255);
     box-shadow: 0 0 5px #03e9f4,
                 0 0 25px #03e9f4,
@@ -64,7 +64,7 @@
 }
 
 .lightOna1:hover{
-	align-items: center;
+   align-items: center;
     text-align: center;
   
     position: relative;
@@ -87,6 +87,36 @@
                 0 0 50px #03e9f4,
                 0 0 200px #03e9f4;
 }
+
+/*로켓발사 두번째 비디오*/
+.space_ship_launch{
+   width: 60%;
+   margin-left: 20%;
+   border-radius: 5%;
+}
+.locat1{
+   width: 80%;
+   margin-left: 10%;
+}
+.h1_1{
+   font-style: italic;
+}
+h3{
+   color: white;
+   text-align: center;
+}
+body{
+
+   background-color:black;
+
+}
+.bg {
+
+  overflow: hidden;
+  margin: 0px auto;
+  position: relative;
+}
+
 
 .a1:hover{
     background: #03e9f4;
@@ -290,9 +320,7 @@
    margin-right: 6%;
    margin-left: 1%;
 }
-body{
-    background-color:black;
-}
+
 .footer{
     color: white;
     text-align: center;
@@ -447,14 +475,14 @@ h1{
   animation: neon3 1.5s ease-in-out infinite alternate;
 }
 .exitBtnBox{
-	margin-top:700px;
-	margin-left:70%;
-	position:fixed;
-	width: 250px;
-	
+   margin-top:700px;
+   margin-left:70%;
+   position:fixed;
+   width: 250px;
+   
 }
 .neon_effect .pBlue:first-child{
-	 font-family: Comfortaa;
+    font-family: Comfortaa;
   color: #fff;
    animation: neon2 1.5s ease-in-out infinite alternate;
 }
