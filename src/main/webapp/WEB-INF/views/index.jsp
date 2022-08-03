@@ -47,7 +47,7 @@
       
       </div>
 		<video class="mainVideo"
-			src="../../resources/css/nebula_-_25168 (Original).mp4" width="100%"
+			src="../../resources/css/nebula_-_25168 (Original).mp4" 
 			muted autoplay loop></video>
 
 		<h1 class="stupid">"마치 우주같이 위대한 나를 위하여 그대들이 해줄것이 있소"</h1>
@@ -85,7 +85,7 @@
 
 
 		<div class="header">
-		<h1 class="Logo" >  <a href="han">SPACE SHIP</a> </h1>
+		<a  class="Logo"><h1>SPACE SHIP</h1></a> 
 
 
 
@@ -116,7 +116,7 @@
         <span class="frame-btn__text">LOGIN</span>
       </a>		</div>
 		<video class="mainVideo"
-			src="../../resources/css/nebula_-_25168 (Original).mp4" width="100%"
+			src="../../resources/css/nebula_-_25168 (Original).mp4"
 			muted autoplay loop></video>
 
 		<h1 class="stupid">"마치 우주같이 위대한 나를 위하여 그대들이 해줄것이 있소"</h1>

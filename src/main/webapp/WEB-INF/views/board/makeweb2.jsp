@@ -59,7 +59,7 @@
       <br>
            <h1 class="h1_1">"우주를 향한 인류의 위대한 도약"</h1>
 
-        <video src="../../../resources/css/star_ship_king.mov" muted autoplay loop></video>
+       <video src="../../../resources/css/star_ship_king.mov" muted autoplay loop class="star_ship"></video>
     <br> <br> <br>
        <h3>우주선은 우주에서 이동하는 인공 물체를 말한다. 사람의 탑승 유무와는 관계없이 모두 우주선이라고 칭하므로,  우주왕복선, 인공위성, 탐사선 등을 모두 통틀어 우주선이라 부를 수 있다.<br>
             이 때문에 지구 정지궤도에 진입한 인공위성도 우주선이라고 부르지만, 예외적으로 유인 인공위성인 우주정거장만큼은 우주선이라고 부르지 않는다.</h3>
@@ -70,7 +70,7 @@
       <br><br>우주선은 통신, 지구 관측, 기상, 내비게이션, 행성 탐사, 우주 여행 등 다양한 용도에 상용. 우주선과 우주 여행은 공상과학 소설에서 흔한 소재가 된다.</h3>
    <br> <br> <br>
     <video class="locat1" src="../../../resources/css/locat1.mp4" muted autoplay loop ></video>
-       
+       <h3 class="video3text">발사된 우주왕복선의 모습</h3>
    </c:if>
 
     
@@ -113,7 +113,7 @@
        <br>
            <h1 class="h1_1">"우주를 향한 인류의 위대한 도약"</h1>
 
-        <video src="../../../resources/css/star_ship_king.mov" muted autoplay loop></video>
+        <video src="../../../resources/css/star_ship_king.mov" muted autoplay loop class="star_ship"></video>
     <br> <br> <br>
        <h3>우주선은 우주에서 이동하는 인공 물체를 말한다. 사람의 탑승 유무와는 관계없이 모두 우주선이라고 칭하므로,  우주왕복선, 인공위성, 탐사선 등을 모두 통틀어 우주선이라 부를 수 있다.<br>
             이 때문에 지구 정지궤도에 진입한 인공위성도 우주선이라고 부르지만, 예외적으로 유인 인공위성인 우주정거장만큼은 우주선이라고 부르지 않는다.</h3>
@@ -124,7 +124,7 @@
       <br><br>우주선은 통신, 지구 관측, 기상, 내비게이션, 행성 탐사, 우주 여행 등 다양한 용도에 상용. 우주선과 우주 여행은 공상과학 소설에서 흔한 소재가 된다.</h3>
    <br> <br> <br>
     <video class="locat1" src="../../../resources/css/locat1.mp4" muted autoplay loop ></video>
-
+<h3 class="video3text">발사된 우주왕복선의 모습</h3>
    </c:if>
    
    <script type="text/javascript">

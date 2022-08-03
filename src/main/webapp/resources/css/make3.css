@@ -1,7 +1,7 @@
 .header{
     justify-content:space-around;
     width: 100%;
-    margin-right: 5%;
+    margin-top:10px;
     display: flex;
    color: white;
 
@@ -10,6 +10,13 @@
 .Logo{
 	text-decoration:none;
 	color:white;
+}
+h1{
+	margin-left:30px;
+	margin-top:17px;
+	margin-bottom:0;
+    text-align: center;
+    color: white;
 }
 
 
@@ -21,7 +28,7 @@
   
     position: relative;
     display: inline-block;
-    width: 150px;
+    width: 300px;
     padding-bottom: 20px;
     padding-top: 29px;
     text-align: center;
@@ -32,19 +39,19 @@
     transition: 0.5s;
     letter-spacing: 4px;
     overflow: hidden;
-    margin-right: 50px;
+
+    
    
    
 }
 
-
-.lightOna1{
+.a1:hover{
 	align-items: center;
     text-align: center;
   
     position: relative;
     display: inline-block;
-    width: 150px;
+    width: 200px;
     padding-bottom: 20px;
     padding-top: 29px;
     text-align: center;
@@ -55,16 +62,6 @@
     transition: 0.5s;
     letter-spacing: 4px;
     overflow: hidden;
-    margin-right: 50px;
-	 background: #03e9f4;
-    color: rgb(255, 255, 255);
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 200px #03e9f4;
-}
-
-.a1:hover{
     background: #03e9f4;
     color: rgb(255, 255, 255);
     box-shadow: 0 0 5px #03e9f4,
@@ -72,6 +69,58 @@
                 0 0 50px #03e9f4,
                 0 0 200px #03e9f4;
 
+}
+
+.lightOna1{
+   align-items: center;
+    text-align: center;
+  
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    padding-bottom: 20px;
+    padding-top: 29px;
+    text-align: center;
+    margin: 0px ;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+
+    background: #03e9f4;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+   
+}
+
+.lightOna1:hover{
+   align-items: center;
+    text-align: center;
+  
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    padding-bottom: 20px;
+    padding-top: 29px;
+    text-align: center;
+    margin: 0px ;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+
+     background: #03e9f4;
+      box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
 }
 
 /*.a1은 메뉴버튼들 장식*/
@@ -267,6 +316,8 @@
    margin-left: 1%;
 }
 body{
+	margin: 0;
+    padding: 0;
     background-color:black;
 }
 .footer{
@@ -288,10 +339,7 @@ body{
     margin-right: 5%;
     border-radius: 30%;
 }
-h1{
-    text-align: center;
-    color: white;
-}
+
 .ship{
     margin-left: 25%;
     margin-top: 100px;
