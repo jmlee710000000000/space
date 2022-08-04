@@ -42,36 +42,39 @@ public class MemberController {
 	public String moveRegist() {
 		return "board/Regist";
 	}
+
 	@GetMapping("/moveMakeWeb2")
 	public String moveMakeWeb2() {
 		return "board/makeweb2";
 	}
+
 	@GetMapping("/moveMakeWeb3")
 	public String moveMakeWeb3() {
 		return "board/makeweb3";
 	}
+
 	@GetMapping("/moveMakeWeb4")
 	public String moveMakeWeb4() {
 		return "board/makeweb4";
 	}
+
 	@GetMapping("/moveMakeWeb5")
 	public String moveMakeWeb5() {
 		return "board/makeweb5";
 	}
+
 	@GetMapping("/moveMemberUpdate")
 	public String moveMemberUpdate() {
 		return "board/memberUpdate";
 	}
+
 	@GetMapping("/moveMemberRead")
 	public String moveMemberRead() {
 		return "board/memberRead";
 	}
-	
-	
 
 	@PostMapping("/login")
 	public String login(MemberDTO dto, HttpServletRequest request, RedirectAttributes rttr) {
-		System.out.println("111111111111111");
 		System.out.println(dto);
 
 		String result = memberService.login(dto);
@@ -84,42 +87,42 @@ public class MemberController {
 			return "redirect:/moveLogin";
 		}
 	}
-	
+
 	@GetMapping("/userList")
-	   public String userList(Model model) {
-	      
-	    List<MemberDTO> list =   memberService.userList();
-	      model.addAttribute("list",list);
-	      System.out.println("list값"+ list);
-	      return "board/adminMember";
-	   }
-	
-	   @GetMapping("/adminMember")
-	   public String adminMember(Model model) {
-	      
-	    List<MemberDTO> list =   memberService.userList();
-	      model.addAttribute("list",list);
-	      
-	      return "board/adminMember";
-	   }
-	
-	 @GetMapping("/memberDelete")
-	   public String memberDelete(@RequestParam("user_id")String user_id) {
-	      
-	      System.out.println("user_id 값 확인"+user_id);
-	      memberService.memberDelete(user_id);
-	         
-	      return "redirect:/adminMember";
-	   }
-	 
-	 @GetMapping("/memberRead")
-	   public String memberRead(@RequestParam("user_id")String user_id, Model model) {
-		 System.out.println("111111111111" + user_id);
-	    MemberDTO dto= memberService.memberRead(user_id);
-	    model.addAttribute("dto",dto);
-	      return "board/memberRead";
-	   }
-	 
+	public String userList(Model model) {
+
+		List<MemberDTO> list = memberService.userList();
+		model.addAttribute("list", list);
+		System.out.println("list값" + list);
+		return "board/adminMember";
+	}
+
+	@GetMapping("/adminMember")
+	public String adminMember(Model model) {
+
+		List<MemberDTO> list = memberService.userList();
+		model.addAttribute("list", list);
+
+		return "board/adminMember";
+	}
+
+	@GetMapping("/memberDelete")
+	public String memberDelete(@RequestParam("user_id") String user_id) {
+
+		System.out.println("user_id 값 확인" + user_id);
+		memberService.memberDelete(user_id);
+
+		return "redirect:/adminMember";
+	}
+
+	@GetMapping("/memberRead")
+	public String memberRead(@RequestParam("user_id") String user_id, Model model) {
+		System.out.println("111111111111" + user_id);
+		MemberDTO dto = memberService.memberRead(user_id);
+		model.addAttribute("dto", dto);
+		return "board/memberRead";
+	}
+
 //	   @GetMapping("/memberUpdate")
 //	   public String memberUpdate(@RequestParam("m_no")String m_no, Model model) {
 //	      MemberDTO dto=   memberService.memberRead(m_no);
@@ -134,8 +137,7 @@ public class MemberController {
 //	      
 //	      return "redirect:/memberRead?m_no="+dto.getM_no();
 //	   }
-	 
-	 
+
 
 	@PostMapping("/idCheck")
 	@ResponseBody
@@ -151,7 +153,7 @@ public class MemberController {
 			return "good";
 		}
 	}
-	
+
 	@PostMapping("/nickCheck")
 	@ResponseBody
 	public String nickCheck(@RequestParam("user_nick") String user_nick, RedirectAttributes rttr) {
@@ -166,7 +168,7 @@ public class MemberController {
 			return "good";
 		}
 	}
-	
+
 	@PostMapping("/emailCheck")
 	@ResponseBody
 	public String emailCheck(@RequestParam("user_email") String user_email, RedirectAttributes rttr) {
