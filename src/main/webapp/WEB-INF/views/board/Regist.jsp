@@ -63,9 +63,30 @@
 					<input type="text" name="user_phone" id="phone" class="input-ty1"
 						placeholder="폰 번호" />
 					<div class="phone regex"></div>
+					
+				
+				
+				
+				
+				<div class="mail_wrap">
 					<input type="email" name="user_email" id="email" class="input-ty1"
 						placeholder="이메일" />
 					<div class="email regex"></div>
+					
+					<div class="mail_check_wrap">
+                 		<div class="mail_check_input_box"id="mail_check_input_box_false">
+                     	<input class="mail_check_input" disabled="disabled">
+                  	</div>
+                  <div class="mail_check_button">   
+                  	<span>인증번호 전송</span>
+                  </div>
+                  <div class="clearfix"></div>
+               	</div>
+				</div>
+					
+					
+					
+					
 					<div class="checkDiv">
 						<span class="checkBoxText">이메일 수신에 동의하십니까? </span> <input
 							type="checkbox" class="checkBox" name="user_adult"

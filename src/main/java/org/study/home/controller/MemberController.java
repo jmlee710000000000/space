@@ -1,11 +1,15 @@
 package org.study.home.controller;
 
 import java.util.List;
+import java.util.Random;
 
+import javax.mail.internet.MimeMessage;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
@@ -18,10 +22,26 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.study.home.model.MemberDTO;
 import org.study.home.service.MemberService;
+//이메일 임포트
+import org.springframework.core.io.FileSystemResource;
+import java.io.File;
+import java.lang.System.Logger;
+
+import javax.mail.internet.MimeMessage;
+import org.springframework.mail.javamail.JavaMailSenderImpl;
+import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.mail.javamail.MimeMessagePreparator;
+
+
+
+
 
 @Controller
 public class MemberController {
-
+//	이메일인증
+	@Autowired
+	private JavaMailSender mailSender;
+	
 	@Autowired
 	private MemberService memberService;
 
@@ -192,5 +212,62 @@ public class MemberController {
 
 		return "redirect:/";
 	}
+	
+	@RequestMapping(value = "/sendMail", method = RequestMethod.GET)
+    public void sendMailTest() throws Exception{
+        
+        String subject = "test 메일";
+        String content = "메일 테스트 내용";
+        String from = "wklee1999@naver.com";
+        String to = "wklee1999@naver.com";
+        
+        try {
+            MimeMessage mail = mailSender.createMimeMessage();
+            MimeMessageHelper mailHelper = new MimeMessageHelper(mail,true,"UTF-8");
+            // true는 멀티파트 메세지를 사용하겠다는 의미
+            
+            /*
+             * 단순한 텍스트 메세지만 사용시엔 아래의 코드도 사용 가능 
+             * MimeMessageHelper mailHelper = new MimeMessageHelper(mail,"UTF-8");
+             */
+            
+            mailHelper.setFrom(from);
+            // 빈에 아이디 설정한 것은 단순히 smtp 인증을 받기 위해 사용 따라서 보내는이(setFrom())반드시 필요
+            // 보내는이와 메일주소를 수신하는이가 볼때 모두 표기 되게 원하신다면 아래의 코드를 사용하시면 됩니다.
+            //mailHelper.setFrom("보내는이 이름 <보내는이 아이디@도메인주소>");
+            mailHelper.setTo(to);
+            mailHelper.setSubject(subject);
+            mailHelper.setText(content, true);
+            // true는 html을 사용하겠다는 의미입니다.
+            
+            FileSystemResource file = new FileSystemResource(new File("D:\\test.txt")); 
+            mailHelper.addAttachment("test.txt", file);
+
+            /*
+             * 단순한 텍스트만 사용하신다면 다음의 코드를 사용하셔도 됩니다. 
+             */
+            mailHelper.setText(content);
+            mailSender.send(mail);
+            
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+        
+    }
+	/* 이메일 인증 */
+    @RequestMapping(value="/mailCheck", method=RequestMethod.GET)
+    @ResponseBody
+    public void mailCheckGET(String user_email) throws Exception{
+        
+        /* 뷰(View)로부터 넘어온 데이터 확인 */
+		
+		
+		logger.info("이메일 데이터 전송 확인"); 
+		logger.info("인증번호 : " + user_email);
+		System.out.println();
+    	
+    }
+ 
+
 
 }
