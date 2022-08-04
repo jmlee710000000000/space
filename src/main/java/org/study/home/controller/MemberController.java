@@ -7,6 +7,7 @@ import javax.mail.internet.MimeMessage;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
@@ -38,6 +39,8 @@ import org.springframework.mail.javamail.MimeMessagePreparator;
 
 @Controller
 public class MemberController {
+
+	
 //	이메일인증
 	@Autowired
 	private JavaMailSender mailSender;
@@ -240,7 +243,7 @@ public class MemberController {
             mailHelper.setText(content, true);
             // true는 html을 사용하겠다는 의미입니다.
             
-            FileSystemResource file = new FileSystemResource(new File("D:\\test.txt")); 
+            FileSystemResource file = new FileSystemResource(new File("test.txt")); 
             mailHelper.addAttachment("test.txt", file);
 
             /*
@@ -262,9 +265,11 @@ public class MemberController {
         /* 뷰(View)로부터 넘어온 데이터 확인 */
 		
 		
-		logger.info("이메일 데이터 전송 확인"); 
-		logger.info("인증번호 : " + user_email);
-		System.out.println();
+		
+		  System.out.println("이메일 데이터 전송 확인");
+		  System.out.println("인증번호 : " + user_email);
+		 
+			/* System.out.println(user_email); */
     	
     }
  
